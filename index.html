@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather API Project</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>7-Day Forecast</h1>
+        <div class="searchContainer">
+            <input type="text" id="locationInput" placeholder="Enter city (e.g., Biloxi, MS)" aria-label="City">
+            <button id="searchButton">Search</button>
+            <div class="unitToggleContainer">
+                <input type="checkbox" id="unitToggle">
+                <label for="unitToggle">Celsius/Fahrenheit</label>
+            </div>
+        </div>
+        <div id="errorMessage" class="errorMessage hidden"></div>
+        <div id="currentWeather" class="currentWeather hidden">
+            <h2 id="locationName"></h2>
+            <p id="currentDate"></p>
+            <img id="currentIcon" src="" alt="Weather Icon" class="weatherIcon">
+            <p id="currentTemp"></p>
+            <p id="currentDescription"></p>
+        </div>
+        <div id="forecastContainer" class="forecastContainer"></div>
+    </div>
+    <script src="./js/app.js"></script>
+</body>
+</html>
